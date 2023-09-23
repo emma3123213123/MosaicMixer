@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic Mixer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar d-block position-sticky navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        
+        <a class="navbar-brand d-none d-sm-block me-4" href="https://www.explorematerial.com/">
+            <img src="icons/CSAA.PNG" alt="logo" width="75%">
+        </a>
+        <a href="https://www.explorematerial.com/" class="navbar-brand d-sm-none me-2">
+            <img src="icons/CSAA.PNG" alt="logo" width="45%" height="50px">
+        </a>
+        <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-tool d-none d-lg-flex text-secondary me-2" href="javascript:void(0)" data-bs-toggle="collapse" data-toggle="tooltip" title="Search" data-bs-target="#searchBox" role="button" aria-expanded="true" aria-controls="searchBox">
+                <div class="navbar-tool-icon-box" >
+                    <i class="navbar-tool-icon fas fa-search"></i>
+                </div>
+            </a>
+       
+        </div>
+        <div class="collapse navbar-collapse me-auto" id="navbarCollapse">
+            <!-- Search mobile -->
+            <div class="d-lg-none py-3">
+                <div class="input-group">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    <input class="form-control rounded-start" type="text" placeholder="What do you need">
+                </div>
+            </div>
+           
+            <ul class="navbar-nav border-lg-start mb-1 mb-lg-0">
+                <li class="nav-item dropdown me-1">
+                    <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mosaics Catalogs</a>
+                    <div class="dropdown-menu px-2 ps-0 pb-4">
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup1.html">
+                                        <img class="d-block mx-auto mb-3" src="https://d1pxiqzik421wm.cloudfront.net/uploads/99035-450x450.jpg" alt="Burgers and fries" width="60">
+                                        <h6 class="fs-base text-center">Group 1</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup2.html">
+                                        <img class="d-block mx-auto mb-3" src="https://www.nemotile.com/media/catalog/product/cache/57024c4cfcac96f84c6204901be41652/t/h/thassos_ladygreydot_basketweave_mosaic_01_ml.jpg" alt="Noodles" width="60">
+                                        <h6 class="fs-base text-center">Group 2</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup3.html">
+                                        <img class="d-block mx-auto mb-3" src="https://texastravertine.com/wp-content/uploads/2021/02/shell-stone-split-face-limstone-mosaic-1x2-1-600x600-1.jpg" alt="Pizza and pasta" width="60">
+                                        <h6 class="fs-base text-center">Group 3</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesmcgaha.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Mcgaha/McGaha_Bravada.jpg" alt="Grill and steaks" width="60">
+                                        <h6 class="fs-base text-center">Mcgaha</h6>
+                                    </a>
+                                </div>
+                            </div>
+                           
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesparquet.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Parquet/PARQ.JPG" alt="Fish and seafood" width="60">
+                                        <h6 class="fs-base text-center">Parquet</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplespebbles.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Pebbles/12.PNG" alt="Healthy food" width="60">
+                                        <h6 class="fs-base text-center">Pebbles</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                 
+
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesspecialty.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/specialty/ca.png" alt="Haute cuisine" width="60">
+                                        <h6 class="fs-base text-center">Specialty</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesArtiasan.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/artisan/Sigma.webp" alt="Fish and seafood" width="60">
+                                        <h6 class="fs-base text-center">Artisan Collection</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="nav-item me-1">
+                  <a class="nav-link" href="/MosaicMixer/index.html">Home</a>
+              </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/group1new.php">Group1</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/group2new.php">Group2</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/group3new.php">Group3</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/mcgahanuevo.php">Mcgaha</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/artisan.php">Artisan_Collection</a>
+                </li>
+                <li class="nav-item me-1">
+                  <a class="nav-link" href="/MosaicMixer/parquetnew.php">Parquet</a>
+              </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/pebblesnew.php">Pebbles</a>
+                </li>
+                <li class="nav-item me-1">
+                  <a class="nav-link" href="/MosaicMixer/specialtynew.php">Specialty</a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link" href="/MosaicMixer/index.html#reviews">Colors</a>
+            </li>
+            </ul>
+        </div>
+        <!-- Search collapse -->
+        <div class="search-box collapse" id="searchBox">
+            <div class="container py-2">
+                <div class="input-group">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    <input type="text" class="form-control rounded-start" placeholder="What do you need?">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End of Navbar -->
+
+<!-- Hero section -->
+<section class="section-hero bg-darker py-5">
+
+   
+          <br>        <br>
+          <br>        <br>
+          <br>
+                <div class="fs" style="color: #ffffff;  text-align:justify; font-size:80px; text-align-last: center;">
+                         MOSAICS
+                    
+    </div>
+</section>
+<!-- End of Hero section -->
+
+<!-- Section food gallery -->
+<section class="container py-4 py-sm-5 my-lg-3" id="cuisine">
+    <h2 class="text-center pt-4 pt-sm-3">Mosaic Groups</h2>
+    <p class="text-muted text-center mb-5">choose the mosaic group you want to access</p>
+    <div class="row">
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/group1new.php">
+                <img src="http://mobileimages.lowes.com/product/converted/891992/891992001454.jpg" class="card-img-top img-fluid" alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Group 1</h3>
+                    
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/group2new.php">
+                <img src="https://www.nemotile.com/media/catalog/product/cache/57024c4cfcac96f84c6204901be41652/t/h/thassos_ladygreydot_basketweave_mosaic_01_ml.jpg" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Group 2</h3>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/group3new.php">
+                <img src="https://texastravertine.com/wp-content/uploads/2021/02/shell-stone-split-face-limstone-mosaic-1x2-1-600x600-1.jpg" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Group 3</h3>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg" href="/MosaicMixer/mcgahanuevo.php" >
+                <img src="icons/Mcgaha/McGaha_Bravada.jpg" class="card-img-top img-fluid"
+                    alt="Burger meal" >
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Mcgaha</h3>
+                </div>
+            </a>
+        </div>
+         <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/artisan.php">
+                <img src="icons/artisan/Sigma.webp" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Artisan Collection</h3>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/parquetnew.php">
+                <img src="icons/Parquet/PARQ.JPG" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Parquet</h3>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg"  href="/MosaicMixer/pebblesnew.php">
+                <img src="icons/Pebbles/12.PNG" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h3 class="card-title text-center fs-5">Pebbles</h3>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+         <!-- single card -->
+         <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+          <a class="card border-0 shadow-lg" href="/MosaicMixer/specialtynew.php">
+              <img src="icons/specialty/ca.png" class="card-img-top img-fluid"
+                  alt="Burger meal">
+              <div class="card-body">
+                  <h3 class="card-title text-center fs-5">Specialty</h3>
+              </div>
+          </a>
+      </div>
+      <!-- End of single card -->
+    </div>
+</section>
+<!-- End of Section food gallery -->
+
+
+
+<!-- Section popular restaurants -->
+
+<!-- End of Section popular restaurants -->
+
+<!-- Reviews section -->
+<section class="container-fluid py-5 reviews-container" id="reviews">
+    <div class="container p-2 py-3">
+        <h2 class="text-center mb-5">Colors</h2>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active slider-btn"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="slider-btn" aria-label="Slide 2"></button>
+                       
+                       
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active slider-btn1"
+                        aria-current="true" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="slider-btn1" aria-label="Slide 4"></button>
+                    
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active slider-btn2"
+                    aria-current="true" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="slider-btn2" aria-label="Slide 4"></button>
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="active slider-btn2"
+                aria-current="true" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="slider-btn2" aria-label="Slide 4"></button>
+            
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="active slider-btn2"
+            aria-current="true" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="slider-btn2" aria-label="Slide 4"></button>
+        
+                
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" class="active slider-btn2"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="slider-btn" aria-label="Slide 4"></button>
+        
+                  
+                  </div>
+                    <div class="carousel-inner">
+                        <!-- Carousel-item 1 -->
+                        <div class="carousel-item active">
+                            <div class="row px-2 flex-nowrap">
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Argento</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%" 
+                                            src="colores/Argento.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                           
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Ash</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Ash.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Basalt</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Basalt.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Bianco</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Bianco.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <!-- End of Single review -->
+                            </div>
+                        </div>
+                        <!-- End of carousel-item 1 -->
+                            <!-- Carousel-item 2 -->
+                        <div class="carousel-item">
+                            <div class="row px-2 flex-nowrap">
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Birch</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Birch.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Breccia Azul</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Breccia Azul.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Breccia Nuvole</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Breccia Nuvole.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Breccia Fiore</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Breccia Fiore.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                            
+                              
+                      
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row px-2 flex-nowrap">
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Breccia Nero</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Breccia Nero.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Calaglio</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Calaglio.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Carmel </h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Carmel.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Carrara</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Carrara.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                            
+                              
+                      
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row px-2 flex-nowrap">
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Cedar</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Cedar.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">charcoal </h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/charcoal.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Cream </h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Cream.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;">Danby</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Danby.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                            
+                              
+                      
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row px-2 flex-nowrap">
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Date</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Date.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;"> Dourdan</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Dourdan.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                                <!-- End of Single review -->
+                                <!-- Single review -->
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Fig </h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Fig.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                                    <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                      <h5 class="fs-5 mb-1" style="text-align-last: center;"> Grigio</h>
+                                        <footer class="d-flex justify-content-center">
+                                            <img class="" width="100%"
+                                                src="colores/Grigio.jpg" alt="Image of Adrain Lewis">
+                                            <div class="ms-2">
+                                          
+                                          
+                                          
+                                            </div>
+                                          </footer>
+                                        </blockquote>
+                            
+                              
+                      
+                            </div>
+                        </div>
+
+    <!-- End of Single review -->    <!-- End of Single review -->    <!-- End of Single review -->
+                          <div class="carousel-item">
+                        
+                          <div class="row px-2 flex-nowrap">
+                              <!-- Single review -->
+                              <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                <h5 class="fs-5 mb-1" style="text-align-last: center;"> Latte VC</h>
+                                  <footer class="d-flex justify-content-center">
+                                      <img class="" width="100%"
+                                          src="colores/Latte VC.jpg" alt="Image of Adrain Lewis">
+                                      <div class="ms-2">
+                                    
+                                    
+                                    
+                                      </div>
+                                  </footer>
+                              </blockquote>
+                         
+                              <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                <h5 class="fs-5 mb-1" style="text-align-last: center;">Latte</h>
+                                  <footer class="d-flex justify-content-center">
+                                      <img class="" width="100%"
+                                          src="colores/Latte.jpg" alt="Image of Adrain Lewis">
+                                      <div class="ms-2">
+                                    
+                                    
+                                    
+                                      </div>
+                                  </footer>
+                              </blockquote>
+                              <!-- End of Single review -->
+                              <!-- Single review -->
+                              <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                <h5 class="fs-5 mb-1" style="text-align-last: center;">Maderno</h>
+                                  <footer class="d-flex justify-content-center">
+                                      <img class="" width="100%"
+                                          src="colores/Maderno.jpg" alt="Image of Adrain Lewis">
+                                      <div class="ms-2">
+                                    
+                                    
+                                    
+                                      </div>
+                                    </footer>
+                                  </blockquote>
+                                  <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                    <h5 class="fs-5 mb-1" style="text-align-last: center;">Maderno VC</h>
+                                      <footer class="d-flex justify-content-center">
+                                          <img class="" width="100%"
+                                              src="colores/Maderno.jpg" alt="Image of Adrain Lewis">
+                                          <div class="ms-2">
+                                        
+                                        
+                                        
+                                          </div>
+                                        </footer>
+                                      </blockquote>
+                              <!-- End of Single review -->
+                              <!-- Single review -->
+                              <!-- End of Single review -->
+                          </div>
+                      </div>
+
+
+                      <div class="carousel-item">
+                        
+                        <div class="row px-2 flex-nowrap">
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Menorca</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Menorca.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                       
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Montclair</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Montclair.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Nero</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/nero.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                  </footer>
+                                </blockquote>
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Orange</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Orange.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <!-- End of Single review -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        
+                        <div class="row px-2 flex-nowrap">
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Pearl</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Pearl.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                       
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Pecan</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Pecan.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Pepper</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Pepper.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                  </footer>
+                                </blockquote>
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Pewter</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Pewter.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <!-- End of Single review -->
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        
+                        <div class="row px-2 flex-nowrap">
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Primavera</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Primavera.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                       
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Riviera Beige</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Riviera Beige.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Royal</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Royal.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                  </footer>
+                                </blockquote>
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Sable</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Sable.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <!-- End of Single review -->
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        
+                        <div class="row px-2 flex-nowrap">
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Sand</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Sable.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                       
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Savena</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Savena.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Sedona</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Sedona.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                  </footer>
+                                </blockquote>
+                                <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">Seville</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/Seville.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <!-- End of Single review -->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                      <div class="carousel-item">
+                        
+                        <div class="row px-2 flex-nowrap">
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Sienna</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Siena.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                       
+                            <blockquote class="col-10 col-sm-6 col-md-2 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Vintage</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Vintage.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                </footer>
+                            </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <blockquote class="col-10 col-sm-6 col-md-4 col-lg-3">
+                              <h5 class="fs-5 mb-1" style="text-align-last: center;">Vintage VC</h>
+                                <footer class="d-flex justify-content-center">
+                                    <img class="" width="100%"
+                                        src="colores/Vintage VC.jpg" alt="Image of Adrain Lewis">
+                                    <div class="ms-2">
+                                  
+                                  
+                                  
+                                    </div>
+                                  </footer>
+                                </blockquote>
+         
+                                <blockquote class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                    
+                                  <h5 class="fs-5 mb-1" style="text-align-last: center;">White</h>
+                                    <footer class="d-flex justify-content-center">
+                                        <img class="" width="100%"
+                                            src="colores/White.jpg" alt="Image of Adrain Lewis">
+                                        <div class="ms-2">
+                                      
+                                      
+                                      
+                                        </div>
+                                      </footer>
+                                    </blockquote>
+                            <!-- End of Single review -->
+                            <!-- Single review -->
+                            <!-- End of Single review -->
+                        </div>
+                    </div>
+
+
+                        <!-- End of carousel-item 2 -->      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of reviews section -->
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light py-4 w-100" id="footer">
+    <div class="container">
+        <div class="row pt-2 justify-content-center">
+            <div class="col-lg-2 col-sm-4">
+                <a href="https://www.explorematerial.com/" class="d-inline-block">
+                    <img src="icons/CAPa.PNG" alt="Logo of Cartzilla"  width="100%" class="img img-fluid">
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+               
+              <ul class="footer-list ps-3">
+                <li  onclick="location.href='https://materials-stone.myshopify.com/collections';" class="list-item mb-1 text-secondary">PRODUCTS</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/bespoke';" class="list-item mb-1 text-secondary">BESPOKE</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/bespoke';" class="list-item mb-1 text-secondary">SERVICES</li>
+                <li  onclick="location.href='https://www.explorematerial.com/blogs/news';" class="list-item mb-1 text-secondary">BLOG</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/about';" class="list-item mb-1 text-secondary">OUR STORY</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/project-gallery';" class="list-item mb-1 text-secondary">PROJECTS</li>
+              </ul>
+          </div>
+
+            <div class="col-lg-2 col-sm-4">
+               
+                <ul class="footer-list ps-3">
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/our-showrooms';" class="list-item mb-1 text-secondary">LOCATIONS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/contact';" class="list-item mb-1 text-secondary">CONTACT US</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/career-opportunities';" class="list-item mb-1 text-secondary">CAREERS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/literature';" class="list-item mb-1 text-secondary">LITERATURE</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/trade-program';" class="list-item mb-1 text-secondary">FOR THE TRADE</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/account/login?return_url=%2Faccount';" class="list-item mb-1 text-secondary">ACCOUNT</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/frequently-asked-questions';" class="list-item mb-1 text-secondary">FAQS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/a/wishlist';" class="list-item mb-1 text-secondary">WISHLIST</li>
+                </ul>
+            </div>
+           
+            <div class="col-lg-2 col-sm-4">
+                <h6 class="text-light ps-3 mb-3">Follow us</h6>
+                <ul class="footer-list ps-3">
+                    <li  onclick="location.href='https://www.facebook.com/explorematerial';" class="list-item mb-1 text-secondary">Facebook</li>
+                    <li  onclick="location.href='https://www.instagram.com/explore.material/';" class="list-item mb-1 text-secondary">Instagram</li>
+                    <li  onclick="location.href='https://www.linkedin.com/company/explorematerial/';" class="list-item mb-1 text-secondary">linkedin</li>
+                    <li  onclick="location.href='https://www.pinterest.com/explorematerial/_created/';" class="list-item mb-1 text-secondary">Pinterest</li>
+                    <li  onclick="location.href='https://www.tiktok.com/@explorematerial';" class="list-item mb-1 text-secondary">TikTok</li>
+                  
+                </ul>
+
+            </div>
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="row">
+                    <h6>Download our app</h6>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <a href="" class="btn btn-dark border border-1 border-secondary d-flex btn-mobile-app-footer mb-2 mb-md-0">
+                            <i class="fab fa-apple text-light app-store-logo align-self-center fs-3"></i>
+                            <div class="d-flex flex-column ms-2">
+                                <span class="text-muted app-store-text">Download on the</span>
+                                <span class="text-light app-store-name">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <hr class="hr-light my-3 my-md-5">
+        <div class="row justify-content-lg-between justify-content-center flex-sm-column flex-lg-row">
+            <div class="col-md-5 col-sm-8 text-muted fs-6 mb-lg-1 mb-2 mx-lg-0 mx-auto ">
+                &copy;  2023 MATERIAL Bespoke Stone + Tile | All rights reserved
+            </div>
+            <div class="col-md-7 col-sm-10 text-muted fs-6 mx-lg-0 mx-auto">
+                <ul class="footer-list footer-copyright-list text-md-end text-sm-start">
+                    <li class="d-inline-block mx-2 list-item">Privacy Polcy</li>
+             
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of footer Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+
+<!--Enable tooltips  -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+</script>
+</body>
+</html>
+<style>
+  /* Navbar */
+
+/* End of navbar */
+
+/* Hero section */
+.section-hero {
+    background-image: url(https://cdn.shopify.com/s/files/1/0567/4935/9138/files/Mosaics-Main.jpg?crop=center&height=1080&v=1677279100&width=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fe696a;
+}
+
+
+
+
+
+/* End of Hero section */
+
+/* Food gallery */
+
+.card {
+    text-decoration: none;
+    color: #212529;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    opacity: .7;
+    transition: opacity .6s;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+/* End of Food gallery */
+
+/* Mobile app section */
+.section-mobile-app {
+    background-color: #fe3638;
+}
+
+.app-store-text {
+    font-size: .5rem;
+}
+
+.app-store-name {
+    font-size: .8rem;
+}
+/* End of mobile app section */
+
+/* Career section */
+.courier-row {
+    background-color: rgba(97, 115, 133, 0.095);
+}
+
+.chef-row {
+    background-color: rgba(197, 90, 18, 0.09);
+}
+
+.career-btn {
+    background-color: #fe696a;
+}
+
+.career-btn:hover {
+    background-color: #fe3638;
+}
+/* End of Career section */
+
+/* Reviews section */
+.reviews-container {
+    background-color: #f6f9fc;
+}
+
+.carousel-indicators {
+    bottom: -3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color:#6c757d ;
+}
+
+.slider-btn.active {
+    background-color: #fe3638;
+}
+/* End of reviews section */
+
+/* Footer */
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+   
+}
+/* End of footer */
+
+/* Responsive */
+
+@media only screen and (max-width: 576px) {
+    .btn-mobile-app {
+        min-width: 60%;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .btn-mobile-app-footer {
+        min-width: 30%;
+        max-width: 35%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .hero-container {
+        padding-top: 6rem !important;
+    }
+}
+
+</style>

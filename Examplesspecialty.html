@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic Mixer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar d-block position-sticky navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        
+        <a class="navbar-brand d-none d-sm-block me-4" href="https://www.explorematerial.com/">
+            <img src="icons/CSAA.PNG" alt="logo" width="75%">
+        </a>
+        <a href="https://www.explorematerial.com/" class="navbar-brand d-sm-none me-2">
+            <img src="icons/CSAA.PNG" alt="logo" width="45%" height="50px">
+        </a>
+        <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-tool d-none d-lg-flex text-secondary me-2" href="javascript:void(0)" data-bs-toggle="collapse" data-toggle="tooltip" title="Search" data-bs-target="#searchBox" role="button" aria-expanded="true" aria-controls="searchBox">
+                <div class="navbar-tool-icon-box" >
+                    <i class="navbar-tool-icon fas fa-search"></i>
+                </div>
+            </a>
+         
+        </div>
+        <div class="collapse navbar-collapse me-auto" id="navbarCollapse">
+            <!-- Search mobile -->
+            <div class="d-lg-none py-3">
+                <div class="input-group">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    <input class="form-control rounded-start" type="text" placeholder="What do you need">
+                </div>
+            </div>
+           
+            <ul class="navbar-nav border-lg-start mb-1 mb-lg-0">
+                <li class="nav-item dropdown me-1">
+                    <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mosaics Catalogs</a>
+                    <div class="dropdown-menu px-2 ps-0 pb-4">
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup1.html">
+                                        <img class="d-block mx-auto mb-3" src="https://d1pxiqzik421wm.cloudfront.net/uploads/99035-450x450.jpg" alt="Burgers and fries" width="60">
+                                        <h6 class="fs-base text-center">Group 1</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup2.html">
+                                        <img class="d-block mx-auto mb-3" src="https://www.nemotile.com/media/catalog/product/cache/57024c4cfcac96f84c6204901be41652/t/h/thassos_ladygreydot_basketweave_mosaic_01_ml.jpg" alt="Noodles" width="60">
+                                        <h6 class="fs-base text-center">Group 2</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesGroup3.html">
+                                        <img class="d-block mx-auto mb-3" src="https://texastravertine.com/wp-content/uploads/2021/02/shell-stone-split-face-limstone-mosaic-1x2-1-600x600-1.jpg" alt="Pizza and pasta" width="60">
+                                        <h6 class="fs-base text-center">Group 3</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesmcgaha.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Mcgaha/McGaha_Bravada.jpg" alt="Grill and steaks" width="60">
+                                        <h6 class="fs-base text-center">Mcgaha</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesparquet.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Parquet/PARQ.JPG" alt="Fish and seafood" width="60">
+                                        <h6 class="fs-base text-center">Parquet</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplespebbles.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/Pebbles/12.PNG" alt="Healthy food" width="60">
+                                        <h6 class="fs-base text-center">Pebbles</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/Examplesspecialty.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/specialty/ca.png" alt="Haute cuisine" width="60">
+                                        <h6 class="fs-base text-center">Specialty</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mega-dropdown-column pt-4 px-3" style="width: 7rem;">
+                                <div class="widget mb-3">
+                                    <a class="d-block text-decoration-none text-dark" href="/MosaicMixer/ExamplesArtiasan.html">
+                                        <img class="d-block mx-auto mb-3" src="icons/artisan/Sigma.webp" alt="Fish and seafood" width="60">
+                                        <h6 class="fs-base text-center">Artisan Collection</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/index.html">Home</a>
+                </li>
+                  <li class="nav-item me-1">
+                      <a class="nav-link" href="/MosaicMixer/group1new.php">Group1</a>
+                  </li>
+                  <li class="nav-item me-1">
+                      <a class="nav-link" href="/MosaicMixer/group2new.php">Group2</a>
+                  </li>
+                  <li class="nav-item me-1">
+                      <a class="nav-link" href="/MosaicMixer/group3new.php">Group3</a>
+                  </li>
+                  <li class="nav-item me-1">
+                      <a class="nav-link" href="/MosaicMixer/mcgahanuevo.php">Mcgaha</a>
+                  </li>
+                  <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/artisan.php">Artisan_Collection</a>
+                </li>
+                  <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/parquetnew.php">Parquet</a>
+                </li>
+                  <li class="nav-item me-1">
+                      <a class="nav-link" href="/MosaicMixer/pebblesnew.php">Pebbles</a>
+                  </li>
+                  <li class="nav-item me-1">
+                    <a class="nav-link" href="/MosaicMixer/specialtynew.php">Specialty</a>
+                </li>
+                <li class="nav-item me-1">
+                  <a class="nav-link" href="/MosaicMixer/index.html#reviews">Colors</a>
+              </li>
+            </ul>
+        </div>
+        <!-- Search collapse -->
+        <div class="search-box collapse" id="searchBox">
+            <div class="container py-2">
+                <div class="input-group">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    <input type="text" class="form-control rounded-start" placeholder="What do you need?">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- End of Navbar -->
+
+<!-- Hero section -->
+<section class="section-hero bg-darker py-5">
+
+   
+           
+          <br>        <br>    
+                <div class="fs" style="color: #ffffff;  text-align:justify; font-size:80px; text-align-last: center;">
+                         Specialty
+                    
+    </div>
+</section>
+<!-- End of Hero section -->
+
+<!-- Section food gallery -->
+<section class="container py-4 py-sm-5 my-lg-3" id="cuisine">
+    <h2 class="text-center pt-4 pt-sm-3">Specialty</h2>
+    <p class="text-muted text-center mb-5">Mosaics come in innumerable sizes, shapes, and styles. At MATERIAL, we create custom blends of natural stone colors and finishes to produce something entirely your own. Most combinations work beautifully with floor or wall installation, and because they are fully customizable, MATERIAL’s mosaic offerings provide a beautiful focal point for your home. Whatever you envision, we can provide.</p>
+    <div class="row">
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg">
+                <img src="icons/specialty/mad.png" class="card-img-top img-fluid" alt="Burger meal">
+                <div class="card-body">
+                    <h2 class="card-title text-center fs-5">Madison</h2>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">11 5⁄16'' x 10 9⁄16'' </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">1'' x 5 5⁄16''  </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">1⁄2'' x 5 5⁄16'' per piece </h6>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg">
+                <img src="icons/specialty/south.PNG" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h2 class="card-title text-center fs-5">Southtown</h2>
+
+                    <h6 class="fs-base text-center" style="font-size: 12px;">8 3⁄16'' x 10 9⁄16'' </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">1'' x 2''  </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">1⁄2'' x 2'' per piece </h6>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg">
+                <img src="icons/specialty/calñl.png" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h2 class="card-title text-center fs-5">Calico</h2>
+
+                    <h6 class="fs-base text-center" style="font-size: 12px;">11 7⁄16'' x 11 7⁄16'' </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">Picket: 2 1⁄2'' x 5''  </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">Square: 2 1⁄2'' x 2 1⁄2'' </h6>
+                    
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        <div class="col-10 col-sm-6 col-md-4 mb-3 mb-md-4 mx-auto mx-sm-0">
+            <a class="card border-0 shadow-lg">
+                <img src="icons/specialty/gali.png" class="card-img-top img-fluid"
+                    alt="Burger meal">
+                <div class="card-body">
+                    <h2 class="card-title text-center fs-5">Galileo</h2>
+
+                    <h6 class="fs-base text-center" style="font-size: 12px;">9 5⁄16'' x 9 13⁄32'' </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">Hexagon: 5'' x 5 3⁄4''  </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">Square: 2 7⁄8'' x 2 7⁄8'' </h6>
+                    <h6 class="fs-base text-center" style="font-size: 12px;">Isotoxal: 1 7⁄16'' x 2 3⁄4'' </h6>
+                </div>
+            </a>
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        
+        </div>
+        <!-- End of single card -->
+        <!-- single card -->
+        
+    <!-- End of single card -->
+    </div>
+</section>
+<!-- End of Section food gallery -->
+
+
+
+<!-- Section popular restaurants -->
+
+<!-- End of Section popular restaurants -->
+
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light py-4 w-100" id="footer">
+    <div class="container">
+        <div class="row pt-2 justify-content-center">
+            <div class="col-lg-2 col-sm-4">
+                <a href="https://www.explorematerial.com/" class="d-inline-block">
+                    <img src="icons/CAPa.PNG" alt="Logo of Cartzilla"  width="100%" class="img img-fluid">
+                </a>
+            </div>
+
+            <div class="col-lg-2 col-sm-4">
+               
+              <ul class="footer-list ps-3">
+                <li  onclick="location.href='https://materials-stone.myshopify.com/collections';" class="list-item mb-1 text-secondary">PRODUCTS</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/bespoke';" class="list-item mb-1 text-secondary">BESPOKE</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/bespoke';" class="list-item mb-1 text-secondary">SERVICES</li>
+                <li  onclick="location.href='https://www.explorematerial.com/blogs/news';" class="list-item mb-1 text-secondary">BLOG</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/about';" class="list-item mb-1 text-secondary">OUR STORY</li>
+                <li  onclick="location.href='https://www.explorematerial.com/pages/project-gallery';" class="list-item mb-1 text-secondary">PROJECTS</li>
+              </ul>
+          </div>
+
+            <div class="col-lg-2 col-sm-4">
+               
+                <ul class="footer-list ps-3">
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/our-showrooms';" class="list-item mb-1 text-secondary">LOCATIONS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/contact';" class="list-item mb-1 text-secondary">CONTACT US</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/career-opportunities';" class="list-item mb-1 text-secondary">CAREERS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/literature';" class="list-item mb-1 text-secondary">LITERATURE</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/trade-program';" class="list-item mb-1 text-secondary">FOR THE TRADE</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/account/login?return_url=%2Faccount';" class="list-item mb-1 text-secondary">ACCOUNT</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/pages/frequently-asked-questions';" class="list-item mb-1 text-secondary">FAQS</li>
+                  <li  onclick="location.href='https://www.explorematerial.com/a/wishlist';" class="list-item mb-1 text-secondary">WISHLIST</li>
+                </ul>
+            </div>
+           
+            <div class="col-lg-2 col-sm-4">
+                <h6 class="text-light ps-3 mb-3">Follow us</h6>
+                <ul class="footer-list ps-3">
+                    <li  onclick="location.href='https://www.facebook.com/explorematerial';" class="list-item mb-1 text-secondary">Facebook</li>
+                    <li  onclick="location.href='https://www.instagram.com/explore.material/';" class="list-item mb-1 text-secondary">Instagram</li>
+                    <li  onclick="location.href='https://www.linkedin.com/company/explorematerial/';" class="list-item mb-1 text-secondary">linkedin</li>
+                    <li  onclick="location.href='https://www.pinterest.com/explorematerial/_created/';" class="list-item mb-1 text-secondary">Pinterest</li>
+                    <li  onclick="location.href='https://www.tiktok.com/@explorematerial';" class="list-item mb-1 text-secondary">TikTok</li>
+                  
+                </ul>
+
+            </div>
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="row">
+                    <h6>Download our app</h6>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <a href="" class="btn btn-dark border border-1 border-secondary d-flex btn-mobile-app-footer mb-2 mb-md-0">
+                            <i class="fab fa-apple text-light app-store-logo align-self-center fs-3"></i>
+                            <div class="d-flex flex-column ms-2">
+                                <span class="text-muted app-store-text">Download on the</span>
+                                <span class="text-light app-store-name">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <hr class="hr-light my-3 my-md-5">
+        <div class="row justify-content-lg-between justify-content-center flex-sm-column flex-lg-row">
+            <div class="col-md-5 col-sm-8 text-muted fs-6 mb-lg-1 mb-2 mx-lg-0 mx-auto ">
+                &copy;  2023 MATERIAL Bespoke Stone + Tile | All rights reserved
+            </div>
+            <div class="col-md-7 col-sm-10 text-muted fs-6 mx-lg-0 mx-auto">
+                <ul class="footer-list footer-copyright-list text-md-end text-sm-start">
+                    <li class="d-inline-block mx-2 list-item">Privacy Polcy</li>
+             
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of footer Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+
+<!--Enable tooltips  -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+</script>
+</body>
+</html>
+<style>
+  /* Navbar */
+
+/* End of navbar */
+
+/* Hero section */
+.section-hero {
+    background-image: url(icons/specialty/exam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: #fe696a;
+}
+
+
+
+
+
+/* End of Hero section */
+
+/* Food gallery */
+
+.card {
+    text-decoration: none;
+    color: #212529;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    opacity: .7;
+    transition: opacity .6s;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+/* End of Food gallery */
+
+/* Mobile app section */
+.section-mobile-app {
+    background-color: #fe3638;
+}
+
+.app-store-text {
+    font-size: .5rem;
+}
+
+.app-store-name {
+    font-size: .8rem;
+}
+/* End of mobile app section */
+
+/* Career section */
+.courier-row {
+    background-color: rgba(97, 115, 133, 0.095);
+}
+
+.chef-row {
+    background-color: rgba(197, 90, 18, 0.09);
+}
+
+.career-btn {
+    background-color: #fe696a;
+}
+
+.career-btn:hover {
+    background-color: #fe3638;
+}
+/* End of Career section */
+
+/* Reviews section */
+.reviews-container {
+    background-color: #f6f9fc;
+}
+
+.carousel-indicators {
+    bottom: -3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color:#6c757d ;
+}
+
+.slider-btn.active {
+    background-color: #fe3638;
+}
+/* End of reviews section */
+
+/* Footer */
+.footer-list {
+    list-style-type: none;
+    padding-left: 0;
+   
+}
+/* End of footer */
+
+/* Responsive */
+
+@media only screen and (max-width: 576px) {
+    .btn-mobile-app {
+        min-width: 60%;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .btn-mobile-app-footer {
+        min-width: 30%;
+        max-width: 35%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .hero-container {
+        padding-top: 6rem !important;
+    }
+}
+
+</style>
